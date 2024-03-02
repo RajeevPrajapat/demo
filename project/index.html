@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(0, 0,33);
+            color: white;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(18, 18, 62);
+        }
+        nav ul{
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+            display: inline-block;
+            position: relative;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        nav ul li a::after{
+            content:'';
+            width: 0%;
+            height: 3px;
+            color: rgb(117, 117, 205);
+            background: #e81708;
+            transition: 0.5s;
+            display:block;
+            margin: auto;
+            transition: all;
+        }
+        nav ul li a:hover::after{
+            width: 100%;
+        }
+        .left{
+            font-size: 1.5rem;
+            transition-duration: 0.5s;
+        }
+        .left:hover{
+            background-color:rgb(145, 91, 196);
+            color: #f8f3f3;
+            
+        }
+        main hr{
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+        .firstSection{
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+            margin: 130px 0;
+        }
+        section div{
+            width: 30%;
+        } 
+        .leftSection{
+            font-size: 2.5rem;
+        }
+        .rightSection img{
+            width: 80%;
+        }
+        .leftSection div{
+            width: 100%;
+        }
+        
+        .purple{
+            background-color:rgb(145, 91, 196);
+        }
+        .text-gray{
+            color: rgb(161, 160, 160);
+        }
+        #element{
+            background-color: rgb(145, 91, 196);
+        }
+        .secondsection{
+            width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondsection h1{
+            font-size:30px ;
+            text-align: center;
+        }
+        .secondsection .box{
+            background:white ;
+            width: 80vh;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+            
+        }
+        .secondsection .vertical{
+            height: 93px;
+            width: 1px;
+            background: white;
+            margin: 0 100px;
+        }
+        .image-top{
+            width: 90px;
+            height: 75px;
+            position: relative;
+            top: -65px;
+            left: -45px;
+            border-radius: 50%;
+        }
+        .vertical-title{
+
+
+        }
+        .vertical-desc{
+
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Rajeev's Protfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a>  </li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- section 1 -->
+        <section class="firstSection">
+            <div class="leftSection">Hi, I am <span class="purple">Rajeev</span>
+                <div>I am pursuing BCA in (DS)     from PCGE college.
+                    </div>
+                    <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="Developer.webp" alt="img not load" width="">
+            </div>
+        </section>
+        <hr>
+        <!-- section 2 -->
+        <section class="secondsection">
+        <span class="text-gray">
+        What I have done so far
+        </span>
+            <h1>Past Experience</h1>
+            <!-- first vetical line -->
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2013)
+                    </div>
+                    <div class="vertical-desc">
+                        It's a text formatting language that transforms text into interactive elements like images, tables, and links. This makes web content dynamic and engaging. This is why almost 95.5% of websites use HTML
+                    </div>
+                </div>
+                <!-- first vertical til -->
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+
+        </section>
+    
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+        strings: ['<i>I know </i>', 'HTML',  'CSS', 'javascript'],
+        typeSpeed: 40,
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
